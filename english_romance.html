@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English Romance Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Default 1 column for small screens */
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .movie-box {
+            width: 217px;  /* Set width to 217px */
+            height: 325px; /* Set height to 325px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none; /* Ensures no underline on links */
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Box for redirecting to xyz.html */
+        .redirect-box {
+            width: 600px;
+            height: 75px;
+            margin: 30px auto;
+            background: #f4f4f4;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .redirect-box a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Book Now Button */
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        /* Media query for screens larger than 768px (tablets and up) */
+        @media (min-width: 768px) {
+            .movies-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        /* Media query for screens larger than 1024px (desktops) */
+        @media (min-width: 1024px) {
+            .movies-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>English Romance Movies</h1>
+
+    <div class="movies-container">
+        <a href="https://www.imdb.com/title/tt0120338/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_titanic" target="_blank" class="movie-box" style="background-image: url('romance_images/English/titanic.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt3783958/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('romance_images/English/la_la_land.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1041829/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('romance_images/English/the_proposal.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0414387/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_Pride%2520" target="_blank" class="movie-box" style="background-image: url('romance_images/English/pride_and_prejudice.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt26047818/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Anyone%2520but%2520you" target="_blank" class="movie-box" style="background-image: url('romance_images/English/anyone_but_you.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1099212/" target="_blank" class="movie-box" style="background-image: url('romance_images/English/twilight_saga.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0332280/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_The%2520notebook" target="_blank" class="movie-box" style="background-image: url('romance_images/English/the_notebook.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2183014/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_love%2520at%2520first%2520sight" target="_blank" class="movie-box" style="background-image: url('romance_images/English/love_at_first_sight.jpg');"></a>
+    </div>
+
+    <div class="redirect-box">
+        <a href="random_movie.html">Nuvvu nannu kottavu ante idi click cheyyi 😂</a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9'">Book Now</button>
+</body>
+</html>

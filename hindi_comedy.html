@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hindi Comedy Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Default 1 column for small screens */
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .movie-box {
+            width: 217px;  /* Set width to 217px */
+            height: 325px; /* Set height to 325px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none; /* Ensures no underline on links */
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        /* Book Now Button */
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        /* Media query for screens larger than 768px (tablets and up) */
+        @media (min-width: 768px) {
+            .movies-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        /* Media query for screens larger than 1024px (desktops) */
+        @media (min-width: 1024px) {
+            .movies-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hindi Comedy Movies</h1>
+
+    <div class="movies-container">
+        <a href="https://www.imdb.com/title/tt1573072/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/housefull.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1980986/?ref_=fn_al_tt_5" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/housefull2.jpeg');"></a>
+        <a href="https://www.imdb.com/title/tt4559046/?ref_=fn_al_tt_4" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/housefull3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7721946/?ref_=fn_al_tt_3" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/housefull4.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt8504014/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_good%2520newz" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/goodnewz.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7581902/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/sktks.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2461132/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/hny.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2172071/?ref_=nv_sr_srsg_3_tt_4_nm_4_in_0_q_student%2520of%2520the%2520year" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/soty.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7255568/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_student%2520of%2520the%2520year" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/soty2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2112124/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/chennaiexpress.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1562872/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_zindagi%2520" target="_blank" class="movie-box" style="background-image: url('comedy_images/Hindi/znmd.jpg');"></a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9'">Book Now</button>
+
+</body>
+</html>

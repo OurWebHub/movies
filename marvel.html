@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin: 30px 0;
+        }
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Default 1 column for small screens */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .movie-box {
+            width: 217px;  /* Set width to 217px */
+            height: 325px; /* Set height to 325px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none; /* Ensures no underline on links */
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        .watched-heading, .unwatched-heading {
+            margin-top: 50px;
+            font-size: 28px;
+            color: #444;
+        }
+
+        /* Book Now Button */
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        /* Media query for screens larger than 768px (tablets and up) */
+        @media (min-width: 768px) {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        /* Media query for screens larger than 1024px (desktops) */
+        @media (min-width: 1024px) {
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Marvel Movies</h1>
+
+    <!-- Unwatched Movies Section -->
+    <h2 class="unwatched-heading">Unwatched</h2>
+    <div class="movie-container">
+        <a href="https://www.imdb.com/title/tt9419884/" target="_blank" class="movie-box" style="background-image: url('marvel_images/doctorstrange2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt10648342/" target="_blank" class="movie-box" style="background-image: url('marvel_images/thor4.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt9114286/" target="_blank" class="movie-box" style="background-image: url('marvel_images/blackpanther2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6791350/" target="_blank" class="movie-box" style="background-image: url('marvel_images/gotg3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt9032400/" target="_blank" class="movie-box" style="background-image: url('marvel_images/eternals.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt9376612/" target="_blank" class="movie-box" style="background-image: url('marvel_images/shangchi.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt4154664/" target="_blank" class="movie-box" style="background-image: url('marvel_images/captainmarvel.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1270797/" target="_blank" class="movie-box" style="background-image: url('marvel_images/venom.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1431045/" target="_blank" class="movie-box" style="background-image: url('marvel_images/deadpool.jpeg');"></a>
+        <a href="https://www.imdb.com/title/tt5463162/" target="_blank" class="movie-box" style="background-image: url('marvel_images/deadpool2.jpg');"></a>
+    </div>
+
+    <!-- Watched Movies Section -->
+    <h2 class="watched-heading">Watched</h2>
+    <div class="movie-container">
+        <a href="https://www.imdb.com/title/tt0371746/" target="_blank" class="movie-box" style="background-image: url('marvel_images/ironman.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1228705/" target="_blank" class="movie-box" style="background-image: url('marvel_images/ironman2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1300854/" target="_blank" class="movie-box" style="background-image: url('marvel_images/ironman3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0800369/" target="_blank" class="movie-box" style="background-image: url('marvel_images/thor.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1981115/" target="_blank" class="movie-box" style="background-image: url('marvel_images/thor2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt3501632/" target="_blank" class="movie-box" style="background-image: url('marvel_images/thor3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0458339/" target="_blank" class="movie-box" style="background-image: url('marvel_images/captainamerica.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1843866/" target="_blank" class="movie-box" style="background-image: url('marvel_images/captainamerica2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt3498820/" target="_blank" class="movie-box" style="background-image: url('marvel_images/captainamerica3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2250912/" target="_blank" class="movie-box" style="background-image: url('marvel_images/spiderman.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6320628/" target="_blank" class="movie-box" style="background-image: url('marvel_images/spiderman2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt10872600/" target="_blank" class="movie-box" style="background-image: url('marvel_images/spiderman3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2015381/" target="_blank" class="movie-box" style="background-image: url('marvel_images/gotg.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt3896198/" target="_blank" class="movie-box" style="background-image: url('marvel_images/gotg2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1211837/" target="_blank" class="movie-box" style="background-image: url('marvel_images/doctorstrange.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1825683/" target="_blank" class="movie-box" style="background-image: url('marvel_images/blackpanther.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0848228/" target="_blank" class="movie-box" style="background-image: url('marvel_images/avengers.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2395427/" target="_blank" class="movie-box" style="background-image: url('marvel_images/avengers2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt4154756/" target="_blank" class="movie-box" style="background-image: url('marvel_images/avengers3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt4154796/" target="_blank" class="movie-box" style="background-image: url('marvel_images/avengers4.jpg');"></a>
+    </div>
+
+    <!-- Book Now Button -->
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9';">Book Now</button>
+
+</body>
+</html>

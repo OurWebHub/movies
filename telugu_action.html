@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Action Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin: 30px 0;
+        }
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .movie-box {
+            width: 217px;
+            height: 325px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        @media (min-width: 768px) {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Telugu Action Movies</h1>
+
+    <div class="movie-container">
+        <a href="https://www.imdb.com/title/tt0816258/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/pokiri.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0858492/?ref_=nv_sr_srsg_0_tt_6_nm_0_in_0_q_vikramarkudu" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/vikramarkudu.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1447500/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_magadheera" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/magadheera.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt13927994/?ref_=nv_sr_srsg_1_tt_2_nm_5_in_0_q_salaar" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/salaar.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7838252/" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/kgf.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt10698680/" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/kgf_2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0366840/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_okkadu" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/okkadu.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0907619/?ref_=fn_al_tt_4" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/arjun.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt9389998/?ref_=fn_al_tt_2" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/pushpa.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt10773090/?ref_=nv_sr_srsg_0_tt_1_nm_1_in_0_q_sarileru%2520neek" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/sarileru_neekevvaru.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt15509164/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_godse" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/godse.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6734984/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_duvvada" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/dj.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7853292/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_antariksham" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/anthariksham.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt13310936/?ref_=nv_sr_srsg_1_tt_6_nm_2_in_0_q_timmarasu" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/thimmarusu.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1613040/?ref_=nv_sr_srsg_2_tt_6_nm_2_in_0_q_leader" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/leader.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0843328/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_chatrapa" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/chatrapathi.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1525323/?ref_=nv_sr_srsg_2_tt_8_nm_0_in_0_q_billa" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/billa.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2631186/" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/bahubali.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt4849438/?ref_=nv_sr_srsg_3_tt_6_nm_2_in_0_q_bahubali" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/bahubali_2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt8178634/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_rrr" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/rrr.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0449951/?ref_=nv_sr_srsg_2_tt_7_nm_1_in_0_q_ghajini" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/ghajini.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt9851854/?ref_=nv_sr_srsg_6_tt_7_nm_1_in_0_q_major" target="_blank" class="movie-box" style="background-image: url('action_images/telugu/major.jpg');"></a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9';">Book Now</button>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mystery Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Default 1 column for small screens */
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .movie-box {
+            width: 217px;  /* Set width to 217px */
+            height: 325px; /* Set height to 325px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none; /* Ensures no underline on links */
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Book Now Button */
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        /* Media query for screens larger than 768px (tablets and up) */
+        @media (min-width: 768px) {
+            .movies-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        /* Media query for screens larger than 1024px (desktops) */
+        @media (min-width: 1024px) {
+            .movies-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mystery Movies</h1>
+
+    <div class="movies-container">
+        <a href="https://www.imdb.com/title/tt11490170/?ref_=nv_sr_srsg_6_tt_8_nm_0_in_0_q_hit%2520" target="_blank" class="movie-box" style="background-image: url('mystery_images/HIT.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt14279982/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_hit%25202nd" target="_blank" class="movie-box" style="background-image: url('mystery_images/HIT2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt11385128/" target="_blank" class="movie-box" style="background-image: url('mystery_images/V.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt24059780/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_Virupaksha" target="_blank" class="movie-box" style="background-image: url('mystery_images/Virupaksha.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt10545484/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Evaru" target="_blank" class="movie-box" style="background-image: url('mystery_images/Evaru.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7797658/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('mystery_images/Awe.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt10214826/?ref_=nv_sr_srsg_0_tt_1_nm_0_in_0_q_Agent%2520Sai%2520Srinivas" target="_blank" class="movie-box" style="background-image: url('mystery_images/Agent_Sai_Srinivas_Athreya.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt3885714/?ref_=fn_al_tt_2" target="_blank" class="movie-box" style="background-image: url('mystery_images/Karthikeya.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt13664684/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('mystery_images/Karthikeya2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2905768/" target="_blank" class="movie-box" style="background-image: url('mystery_images/sahasam.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt8733898/?ref_=nv_sr_srsg_5_tt_8_nm_0_in_0_q_U%2520turn" target="_blank" class="movie-box" style="background-image: url('mystery_images/U_turn.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt15710136/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_Yashoda" target="_blank" class="movie-box" style="background-image: url('mystery_images/Yashoda.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt21989120/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_Ugram" target="_blank" class="movie-box" style="background-image: url('mystery_images/Ugram.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6836936/" target="_blank" class="movie-box" style="background-image: url('mystery_images/Sahoo.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6027478/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('mystery_images/Dhruva.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6299040/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_Ghazi" target="_blank" class="movie-box" style="background-image: url('mystery_images/Ghazi.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2187153/?ref_=fn_al_tt_2" target="_blank" class="movie-box" style="background-image: url('mystery_images/Thupaki.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6727296/?ref_=nv_sr_srsg_5_tt_7_nm_1_in_0_q_Bhagamath" target="_blank" class="movie-box" style="background-image: url('mystery_images/Bhagamathi.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt8047208/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_Taxiwala" target="_blank" class="movie-box" style="background-image: url('mystery_images/Taxiwala.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2939898/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_Anaamika" target="_blank" class="movie-box" style="background-image: url('mystery_images/Anaamika.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt5815940/" target="_blank" class="movie-box" style="background-image: url('mystery_images/Gentleman.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt3810932/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_Drushyam" target="_blank" class="movie-box" style="background-image: url('mystery_images/Drushyam.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt14176094/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Drushyam%25202" target="_blank" class="movie-box" style="background-image: url('mystery_images/Drushyam2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6258486/?ref_=nv_sr_srsg_0_tt_1_nm_0_in_0_q_Ekkadiki%2520pothav%2520chinnavada" target="_blank" class="movie-box" style="background-image: url('mystery_images/Ekkadiki_Pothav_Chinnavada.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7060460/" target="_blank" class="movie-box" style="background-image: url('mystery_images/Khaki.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7758160/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_goodachari" target="_blank" class="movie-box" style="background-image: url('mystery_images/Goodhachari.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6522546/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_SPYDER" target="_blank" class="movie-box" style="background-image: url('mystery_images/SPYDER.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2246837/" target="_blank" class="movie-box" style="background-image: url('mystery_images/Brothers.jpg');"></a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9'">Book Now</button>
+</body>
+</html>

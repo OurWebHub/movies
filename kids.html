@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Default 1 column for small screens */
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .movie-box {
+            width: 217px;  /* Set width to 217px */
+            height: 325px; /* Set height to 325px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none; /* Ensures no underline on links */
+        }
+
+        .movie-box2 {
+            width: 420px;  /* Set width to 217px */
+            height: 310px; /* Set height to 325px */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none; /* Ensures no underline on links */
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        /* Book Now Button */
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        /* Media query for screens larger than 768px (tablets and up) */
+        @media (min-width: 768px) {
+            .movies-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        /* Media query for screens larger than 1024px (desktops) */
+        @media (min-width: 1024px) {
+            .movies-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kids Movies</h1>
+
+    <div class="movies-container">
+        <a href="https://www.imdb.com/title/tt1217209/" target="_blank" class="movie-box" style="background-image: url('Kids_images/brave.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt2096673/" target="_blank" class="movie-box" style="background-image: url('Kids_images/insideout.jpg');"> </a>
+
+        <a href="https://www.imdb.com/title/tt22022452/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('Kids_images/insideout2.jpg');">  </a>
+
+        <a href="https://www.imdb.com/title/tt12801262/" target="_blank" class="movie-box" style="background-image: url('Kids_images/luca.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt1049413/" target="_blank" class="movie-box" style="background-image: url('Kids_images/up.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0317219/" target="_blank" class="movie-box" style="background-image: url('Kids_images/cars.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0114709/" target="_blank" class="movie-box" style="background-image: url('Kids_images/toystory.jpg');"> </a>
+
+        <a href="https://www.imdb.com/title/tt8097030/" target="_blank" class="movie-box" style="background-image: url('Kids_images/turningred.jpg');"> </a>
+
+        <a href="https://www.imdb.com/title/tt0910970/" target="_blank" class="movie-box" style="background-image: url('Kids_images/walle.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0266543/" target="_blank" class="movie-box" style="background-image: url('Kids_images/findingnemo.jpg');"> </a>
+
+        <a href="https://www.imdb.com/title/tt1979388/" target="_blank" class="movie-box" style="background-image: url('Kids_images/thegooddinosaur.jpeg');">  </a>
+
+        <a href="https://www.imdb.com/title/tt15789038/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('Kids_images/elemental.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0120623/" target="_blank" class="movie-box" style="background-image: url('Kids_images/abugslife.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt2245084/" target="_blank" class="movie-box" style="background-image: url('Kids_images/bighero6.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0198781/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_monsters%2520inc" target="_blank" class="movie-box" style="background-image: url('Kids_images/monstersinc.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt1453405/" target="_blank" class="movie-box" style="background-image: url('Kids_images/monstersuniversity.jpg');"> </a>
+
+        <a href="https://www.imdb.com/title/tt2380307/" target="_blank" class="movie-box" style="background-image: url('Kids_images/coco.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt7146812/" target="_blank" class="movie-box" style="background-image: url('Kids_images/onward.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0382932/" target="_blank" class="movie-box" style="background-image: url('Kids_images/ratatouille.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt1860353/" target="_blank" class="movie-box" style="background-image: url('Kids_images/turbo.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0317705/" target="_blank" class="movie-box" style="background-image: url('Kids_images/theincredibles.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt2948372/" target="_blank" class="movie-box" style="background-image: url('Kids_images/soul.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0110357/" target="_blank" class="movie-box" style="background-image: url('Kids_images/thelionking.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt2948356/" target="_blank" class="movie-box" style="background-image: url('Kids_images/zootopia.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt4633694/" target="_blank" class="movie-box" style="background-image: url('Kids_images/spiderman.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0398286/" target="_blank" class="movie-box" style="background-image: url('Kids_images/tangled.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt2294629/" target="_blank" class="movie-box" style="background-image: url('Kids_images/frozen.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt4520988/" target="_blank" class="movie-box" style="background-image: url('Kids_images/frozen2.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt3521164/" target="_blank" class="movie-box" style="background-image: url('Kids_images/moana.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt1323594/" target="_blank" class="movie-box" style="background-image: url('Kids_images/despicableme.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt2293640/" target="_blank" class="movie-box" style="background-image: url('Kids_images/minions.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0268380/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_ice%2520age" target="_blank" class="movie-box" style="background-image: url('Kids_images/iceage.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt3040964/" target="_blank" class="movie-box" style="background-image: url('Kids_images/thejunglebook.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt1772341/" target="_blank" class="movie-box" style="background-image: url('Kids_images/ralph1.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt5848272/" target="_blank" class="movie-box" style="background-image: url('Kids_images/ralph2.jpg');">R</a>
+
+        <a href="https://www.imdb.com/title/tt11304740/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_wish" target="_blank" class="movie-box" style="background-image: url('Kids_images/wish.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt2953050/" target="_blank" class="movie-box" style="background-image: url('Kids_images/encanto.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt4593060/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_pinocc" target="_blank" class="movie-box" style="background-image: url('Kids_images/pinocchio.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0101414/" target="_blank" class="movie-box" style="background-image: url('Kids_images/bb.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt1109624/" target="_blank" class="movie-box" style="background-image: url('Kids_images/paddington.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt4468740/" target="_blank" class="movie-box" style="background-image: url('Kids_images/paddington2.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0837562/" target="_blank" class="movie-box" style="background-image: url('Kids_images/hotel.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt6803390/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_tom%2520and%2520jerry%253A%2520willy" target="_blank" class="movie-box" style="background-image: url('Kids_images/tj2.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt3874544/" target="_blank" class="movie-box" style="background-image: url('Kids_images/bossbaby.jpeg');"></a>
+
+        <a href="https://www.imdb.com/title/tt6932874/" target="_blank" class="movie-box" style="background-image: url('Kids_images/bossbaby2.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt0441773/" target="_blank" class="movie-box" style="background-image: url('Kids_images/kungfupanda.jpg');"></a>
+
+        <a href="https://www.imdb.com/title/tt1361336/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_tom%2520and%2520jerry" target="_blank" class="movie-box2" style="background-image: url('Kids_images/tj.jpeg');"></a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9'">Book Now</button>
+
+</body>
+</html>

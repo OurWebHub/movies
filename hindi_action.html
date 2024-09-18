@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Action Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin: 30px 0;
+        }
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .movie-box {
+            width: 217px;
+            height: 325px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        @media (min-width: 768px) {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hindi Action Movies</h1>
+
+    <div class="movie-container">
+        <a href="https://www.imdb.com/title/tt10295212/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_shershaah" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/shershaah.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7098658/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/raazi.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt5074352/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_dangal" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/dangal.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7430722/" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/war.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0422091/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_dhoom" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/dhoom.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0441048/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_dhoom2" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/dhoom2.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1833673/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_dhoom3" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/dhoom3.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt12844910/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_pathaan" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/pathaan.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt13818368/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_fighter" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/fighter.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt8291224/?ref_=nv_sr_srsg_3_tt_3_nm_5_in_0_q_uri" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/uri.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt13751694/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_animal" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/animal.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt13131232/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_mission%2520majnu" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/mission_majnu.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1562871/?ref_=nv_sr_srsg_6_tt_8_nm_0_in_0_q_ra%2520one" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/ra_one.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0449994/?ref_=nv_sr_srsg_0_tt_2_nm_1_in_0_q_jodhaa%2520akbar" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/jodhaa_akbar.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt5935704/?ref_=nv_sr_srsg_4_tt_4_nm_4_in_0_q_padmava" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/padmavat.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt11460992/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/runway_34.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt3735246/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_Bajirao%2520" target="_blank" class="movie-box" style="background-image: url('action_images/hindi/bajirao_mastani.jpg');"></a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9';">Book Now</button>
+
+</body>
+</html>

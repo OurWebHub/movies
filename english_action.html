@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Action Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin: 30px 0;
+        }
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .movie-box {
+            width: 217px;
+            height: 325px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Book Now Button */
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        @media (min-width: 768px) {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>English Action Movies</h1>
+
+    <div class="movie-container">
+        <a href="https://www.imdb.com/title/tt1375666/" target="_blank" class="movie-box" style="background-image: url('action_images/english/inception.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt7286456/" target="_blank" class="movie-box" style="background-image: url('action_images/english/joker.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2084970/" target="_blank" class="movie-box" style="background-image: url('action_images/english/imitation_game.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt6723592/" target="_blank" class="movie-box" style="background-image: url('action_images/english/tenet.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0816692/" target="_blank" class="movie-box" style="background-image: url('action_images/english/interstellar.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt17279496/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_civil%2520war" target="_blank" class="movie-box" style="background-image: url('action_images/english/civil_war.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1160419/" target="_blank" class="movie-box" style="background-image: url('action_images/english/dune.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0172495/" target="_blank" class="movie-box" style="background-image: url('action_images/english/gladiator.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt1745960/" target="_blank" class="movie-box" style="background-image: url('action_images/english/top_gun.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt2283362/" target="_blank" class="movie-box" style="background-image: url('action_images/english/jumanji.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0369610/" target="_blank" class="movie-box" style="background-image: url('action_images/english/jurassic_world.jpg');"></a>
+        <a href="https://www.imdb.com/title/tt0133093/" target="_blank" class="movie-box" style="background-image: url('action_images/english/matrix.jpg');"></a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9';">Book Now</button>
+
+</body>
+</html>

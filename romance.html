@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Romance Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; /* Change to column layout */
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px; /* Adjusted gap */
+            flex-wrap: wrap; /* Allows boxes to wrap to the next line if needed */
+            justify-content: center; /* Center the boxes horizontally */
+        }
+
+        .language-box {
+            width: 250px;  /* Adjusted width */
+            height: 150px; /* Height remains the same */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8); /* Added text shadow for better readability */
+        }
+
+        .language-box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Color Gradients */
+        .telugu {
+            background: linear-gradient(45deg, #FF512F, #DD2476); /* Red-Pink Gradient */
+        }
+
+        .hindi {
+            background: linear-gradient(45deg, #36D1DC, #5B86E5); /* Blue Gradient */
+        }
+
+        .english {
+            background: linear-gradient(45deg, #00C9FF, #92FE9D); /* Blue-Green Gradient */
+        }
+    </style>
+</head>
+<body>
+    <h1>Romance or Romantic Comedies</h1>
+
+    <div class="container">
+        <a href="telugu_romance.html" class="language-box telugu">Telugu</a>
+        <a href="hindi_romance.html" class="language-box hindi">Hindi</a>
+        <a href="english_romance.html" class="language-box english">English</a>
+    </div>
+</body>
+</html>

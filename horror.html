@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horror Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Default 1 column for small screens */
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .movie-box {
+            width: 217px;  /* Set width to 217px */
+            height: 325px; /* Set height to 325px */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none; /* Ensures no underline on links */
+            background-color: #000; /* Fallback background color for better text visibility */
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        /* Book Now Button */
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        /* Media query for screens larger than 768px (tablets and up) */
+        @media (min-width: 768px) {
+            .movies-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        /* Media query for screens larger than 1024px (desktops) */
+        @media (min-width: 1024px) {
+            .movies-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Horror Movies</h1>
+
+    <div class="movies-container">
+        <a href="https://www.imdb.com/title/tt1457767/" target="_blank" class="movie-box" style="background-image: url('horror_images/The_Conjuring.jpg');">
+            <div class="movie-title">The Conjuring series</div>
+        </a>
+        <a href="https://www.imdb.com/title/tt1396484/" target="_blank" class="movie-box" style="background-image: url('horror_images/It.jpg');">
+            <div class="movie-title">It</div>
+        </a>
+        <a href="https://www.imdb.com/title/tt7349950/" target="_blank" class="movie-box" style="background-image: url('horror_images/It_2.jpg');">
+            <div class="movie-title">It 2</div>
+        </a>
+        <a href="https://www.imdb.com/title/tt3322940/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('horror_images/Annabelle.jpg');">
+            <div class="movie-title">Annabelle Series</div>
+        </a>
+        <a href="https://www.imdb.com/title/tt0070047/?ref_=fn_al_tt_1" target="_blank" class="movie-box" style="background-image: url('horror_images/The_Exorcist.jpg');">
+            <div class="movie-title">The Exorcist</div>
+        </a>
+        <a href="https://www.imdb.com/title/tt0083907/" target="_blank" class="movie-box" style="background-image: url('horror_images/Evil_Dead.jpg');">
+            <div class="movie-title">Evil Dead Series</div>
+        </a>
+        <a href="https://www.imdb.com/title/tt15474916/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_smile" target="_blank" class="movie-box" style="background-image: url('horror_images/Smile.jpg');">
+            <div class="movie-title">Smile</div>
+        </a>
+        <a href="https://www.imdb.com/title/tt1051904/?ref_=fn_al_tt_2" target="_blank" class="movie-box" style="background-image: url('horror_images/Goosebumps.jpg');">
+            <div class="movie-title">Goosebumps Series</div>
+        </a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9'">Book Now</button>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telugu Romance Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Default 1 column for small screens */
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 0 20px;
+        }
+
+        .movie-box {
+            width: 217px;
+            height: 325px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            cursor: pointer;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .movie-box:hover {
+            transform: scale(1.05);
+        }
+
+        .book-now {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .book-now:hover {
+            background-color: darkred;
+        }
+
+        @media (min-width: 768px) {
+            .movies-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .movies-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Telugu Romance Movies</h1>
+
+    <div class="movies-container">
+        <a href="https://www.imdb.com/title/tt13349716/?ref_=fn_al_tt_1" class="movie-box" style="background-image: url('romance_images/Telugu/shyam_singha_roy.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt7159382/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_fidaa" class="movie-box" style="background-image: url('romance_images/Telugu/fidaa.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt7705790/?ref_=nv_sr_srsg_3_tt_7_nm_0_in_0_q_tholi%2520prema" class="movie-box" style="background-image: url('romance_images/Telugu/tholi_prema.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt20850406/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_sita%2520ramam" class="movie-box" style="background-image: url('romance_images/Telugu/sita_ramam.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt6996016/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_ninnu%2520kori" class="movie-box" style="background-image: url('romance_images/Telugu/ninnu_kori.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt25433734/?ref_=nv_sr_srsg_1_tt_4_nm_3_in_0_q_hi%2520nanna" class="movie-box" style="background-image: url('romance_images/Telugu/hi_nanna.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt1869226/?ref_=fn_al_tt_1" class="movie-box" style="background-image: url('romance_images/Telugu/100_percent_love.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt15380630/?ref_=nv_sr_srsg_0_tt_3_nm_5_in_0_q_kushi" class="movie-box" style="background-image: url('romance_images/Telugu/kushi.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt8737614/?ref_=fn_al_tt_1" class="movie-box" style="background-image: url('romance_images/Telugu/majili.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt0431619/?ref_=nv_sr_srsg_6_tt_2_nm_6_in_0_q_arya" class="movie-box" style="background-image: url('romance_images/Telugu/aarya.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt1526323/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Arya%25202" class="movie-box" style="background-image: url('romance_images/Telugu/aarya_2.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt8590896/?ref_=fn_al_tt_2" class="movie-box" style="background-image: url('romance_images/Telugu/geetha_govindham.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt5684466/?ref_=nv_sr_srsg_3_tt_5_nm_3_in_0_q_A%2520Aa" class="movie-box" style="background-image: url('romance_images/Telugu/a_aa.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt13528564/?ref_=fn_al_tt_1" class="movie-box" style="background-image: url('romance_images/Telugu/ante_sundariki.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt1602585/?ref_=fn_al_tt_1" class="movie-box" style="background-image: url('romance_images/Telugu/em_maya_chesava.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt6417204/?ref_=nv_sr_srsg_0_tt_2_nm_0_in_0_q_Shathamanam%2520Bhavathi" class="movie-box" style="background-image: url('romance_images/Telugu/shathamanam_bhavathi.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt8960382/?ref_=fn_al_tt_1" class="movie-box" style="background-image: url('romance_images/Telugu/radhe_shyam.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt1649303/" class="movie-box" style="background-image: url('romance_images/Telugu/darling.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt4417510/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_Nenu%2520Sa" class="movie-box" style="background-image: url('romance_images/Telugu/nenu_sailaja.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt3802668/?ref_=nv_sr_srsg_0_tt_2_nm_6_in_0_q_Govindhudu" class="movie-box" style="background-image: url('romance_images/Telugu/govindudu_andarivadele.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt2714622/?ref_=nv_sr_srsg_0_tt_2_nm_0_in_0_q_Iddarammayilatho" class="movie-box" style="background-image: url('romance_images/Telugu/Iddarammayilatho.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt0439869/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Varsham" class="movie-box" style="background-image: url('romance_images/Telugu/varsham.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt1533748/" class="movie-box" style="background-image: url('romance_images/Telugu/orange.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt8948790/" class="movie-box" style="background-image: url('romance_images/Telugu/jersey.jpg');" target="_blank"></a>
+        <a href="https://www.imdb.com/title/tt0355742/?ref_=nv_sr_srsg_0_tt_5_nm_2_in_0_q_Manmadhudu" class="movie-box" style="background-image: url('romance_images/Telugu/manmadhudu.jpg');" target="_blank"></a>
+    </div>
+
+    <button class="book-now" onclick="window.location.href='https://forms.gle/i3RCjvxHSVi5ek6k9'">Book Now</button>
+
+</body>
+</html>
