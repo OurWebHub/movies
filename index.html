@@ -1,0 +1,179 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Ask for a Date</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('https://4kwallpapers.com/images/walls/thumbs_3t/10248.jpg') no-repeat center center fixed; /* Change 'background.jpg' to your background image URL */
+/*            opacity:0.5;*/
+            background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1 {
+            color: #333; /* Dark color for the main text */
+            margin-top: -100px; /* Adjust this value to move text upwards */
+            margin-bottom: 50px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            color: #fff;
+        }
+        .yes-button {
+            background-color: #28a745; /* Green */
+        }
+        .no-button {
+            background-color: #dc3545; /* Red */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-text">Will you accept for a movie night on DDth of September?</h1>
+    <div class="button-container">
+        <button class="button yes-button" onclick="handleYes()">Yes</button>
+        <button class="button no-button" onmouseover="moveNoButton()">No</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const noButton = document.querySelector('.no-button');
+            const yesButton = document.querySelector('.yes-button');
+            noButton.style.position = 'static';
+            yesButton.insertAdjacentElement('afterend', noButton);
+        });
+
+        function handleYes() {
+            const mainText = document.getElementById("main-text");
+            mainText.innerHTML = "Yayy!!! Lesss gooo 🎉🎉";
+            // Optionally hide the buttons after the "Yes" button is clicked
+            document.querySelector('.button-container').style.display = 'none';
+        }
+
+        function moveNoButton() {
+            const noButton = document.querySelector('.no-button');
+            noButton.style.position = 'absolute';
+            const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+            const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+            noButton.style.left = x + 'px';
+            noButton.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask for a Date</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Background image with opacity */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://4kwallpapers.com/images/walls/thumbs_3t/10248.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.5; /* Adjust this value to reduce the opacity */
+            z-index: -1; /* Place it behind the content */
+        }
+
+        h1 {
+            color: #333; /* Dark color for the main text */
+            margin-top: -100px; /* Adjust this value to move text upwards */
+            margin-bottom: 50px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            color: #fff;
+        }
+
+        .yes-button {
+            background-color: #28a745; /* Green */
+        }
+
+        .no-button {
+            background-color: #dc3545; /* Red */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-text">Will you accept for a movie night with me?</h1>
+    <div class="button-container">
+        <button class="button yes-button" onclick="goToGenresPage()">Yes</button>
+        <button class="button no-button" onmouseover="moveNoButton()">No</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const noButton = document.querySelector('.no-button');
+            const yesButton = document.querySelector('.yes-button');
+            noButton.style.position = 'static';
+            yesButton.insertAdjacentElement('afterend', noButton);
+        });
+        
+        function goToGenresPage() {
+            window.location.href = "genres.html"; // Navigate to the genres page
+        }
+
+        function moveNoButton() {
+            const noButton = document.querySelector('.no-button');
+            noButton.style.position = 'absolute';
+            const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+            const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+            noButton.style.left = x + 'px';
+            noButton.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
+
